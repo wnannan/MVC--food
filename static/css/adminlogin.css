@@ -1,0 +1,52 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+}
+/*input属性placeholder样式*/
+::-webkit-input-placeholder {
+
+}
+.box {
+    margin-top: 100px;
+    padding: 0 30px;
+    height: 280px;
+    width: 400px;
+    background: url("../images/14.jpg") no-repeat center/cover;
+    border-radius: 20px;
+    /*box-shadow: 0 0 30px 0 #009688;*/
+    -webkit-box-reflect: below 2px -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
+.box h2 {
+    text-align: center;
+    line-height: 4;
+    color: #2E2D3C;
+}
+.layui-input-block {
+    margin-left: 0;
+    position: relative;
+}
+.layui-input-block>label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+}
+.layui-input-block>input {
+    border-radius: 6px;
+}
+.layui-input {
+    padding-left: 40px;
+}
+.layui-btn {
+    width: 100%;
+    margin: 20px 0;
+}
+body .demo-class .layui-layer-btn{
+    border-top:1px solid #E9E7E7
+}

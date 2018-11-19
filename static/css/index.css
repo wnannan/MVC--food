@@ -1,0 +1,280 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: none;
+	text-align: center;
+}
+.cate{
+	height: 4rem;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+	bottom: 0;
+}
+.swiper-slide{
+	width: 100%;
+	height: 100%;
+}
+.top {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	/*position: relative;*/
+	width: 7.5rem;
+	height: 1.2rem;
+	background: linear-gradient(to left,rgb(98,224,251),rgb(115,166,251),rgb(98,224,251));
+}
+.top .t-b {
+	width:7.5rem;
+	height: 0.88rem;
+}
+.top .t-b > i.icon-location {
+	position: absolute;
+	bottom: 0.3rem;
+	left: 0.24rem;
+	font-size: 0.34rem;
+	color: #1699d6;
+}
+.t-b p {
+	font-size: 0.24rem;
+	text-align: left;
+	/*line-height: 0;*/
+	color: #fff;
+	position: absolute;
+	bottom: 0.3rem;
+	left: 0.7rem;
+}
+.t-b a > i {
+	font-size: 0.21rem;
+	margin-top: 0.06rem;
+	color: rgba(0,0,0,0.7);
+	float:right;
+}
+.t-b a {
+	padding: 0 0.12rem;
+	display: inline-block;
+	width: 4rem;
+	height: 0.34rem;
+	border-radius: 0.1rem;
+	border: 0;
+	margin-right: 0.24rem;
+	position: absolute;
+	right: 0.24rem;
+	bottom: 0.3rem;
+	background-color: #fff;
+}
+.s-a>li.hot {
+	color: rgb(115,166,251);
+}
+.banner,.banner1 {
+	margin: 0 0.24rem 0;
+	width: 7.02rem;
+	height: 2.96rem;
+	border-radius: 0.26rem;
+	overflow: hidden;		
+}
+.banner1 {
+	margin-top: -0.24rem;
+}
+.banner img,.banner1 img {
+	width: 7.02rem;
+	height: 2.96rem;
+}
+.m-i {
+	margin: 0.24rem auto 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.m-i li {
+	width: 25%;
+	height: 1.26rem;
+	margin-bottom: 0.24rem;
+}
+.m-i li a {
+	text-decoration: none;
+	color: #000;
+}
+.m-i img {
+	width: 1rem;
+	height: 1rem;
+}
+.m-i p {
+	font-size: 0.24rem;
+	line-height:0rem;
+}
+.sjtj {
+	margin-top: 0.24rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.sjtj span {
+	font-size: 0.24rem;
+	margin: 0 0.24rem;
+}
+.sjtj img {
+	width: 0.72rem;
+	height: 0.11rem;	
+}
+.s-b {
+	padding: 0.24rem;
+	padding-top: 0;
+	width: 100%;
+	height: 6.27rem;
+	overflow: hidden;
+	background: rgb(250,249,249);
+}
+.s-b .s-s {
+	padding-top: 0.24rem;
+	width: 100%;
+}
+
+
+.s-b-a {
+	width: 7.02rem;
+	height: 2.4rem;
+	background: #fff;
+	border-radius: 0.1rem;
+	padding: 0.24rem;
+	margin-bottom: 0.24rem;
+}
+.s-b-a .img {
+	display: inline-block;
+	width: 0.24rem;
+	height: 100%;
+	float: left;
+	margin-left:0;
+}
+.s-b-a .img img {
+	width: 1.36rem;
+	height: 1rem;
+	
+}
+.s-text {
+	margin-left: 1.6rem;
+	width: calc(100% - 1.36rem);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.s-text h6 {
+	font-size: 0.26rem;
+	text-align: left;
+}
+.s-text h6 a {
+	color: #000;
+	text-decoration: none;
+}
+.s-text>div {
+	height: 0.24rem;
+	width: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+.s-text>div .icon-star_full {
+	
+	font-size: 0.24rem;
+	color:rgb(150,150,150);
+}
+.s-text>div .icon-star_full:nth-child(1){
+	color: yellow;
+}
+
+
+.s-text p {
+	font-size: 0.24rem;
+	text-align: left;
+	color: rgba(0,0,0,0.7);
+}
+.s-text p .a {
+	color: rgba(251,203,55,0.7)
+}
+.s-text p .b {
+	float: right;
+}
+.s-a{
+	margin: 0.24rem;
+	font-size: 0.24rem;
+}
+.s-a,.tab {
+	display: flex;
+	justify-content: space-between;
+}
+.s-a,.tab a {
+	text-decoration: none;
+	color: rgba(0,0,0,0.7);
+}
+.tab {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 0 0.24rem;
+	width: 100%;
+	height: 0.98rem;
+	background: #fff;
+	
+}
+.tab li {
+	width: 0.6rem;
+	height: 0.98rem;
+	position: relative;
+
+}
+.tab a span {
+	font-size: 0.1rem;
+	position: absolute;
+	bottom: 0.14rem;
+	left: 0.12rem;
+	text-align: center;
+}
+.tab a i {
+	margin-top: 0.12rem;
+	display: block;
+	font-size: 0.47rem;
+	color: #1497d9;
+	line-height: 0.47rem;
+}
+
+/*五星图片*/
+/*最外面的div*/
+.s-text>.img {
+	width: 1.6rem;
+	height: 0.28rem;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+/*灰色的星星*/
+.s-text>.img>img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*黄色星星的div，给黄色星星div宽度设置百分比*/
+.s-text>.img .star {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+/*黄色星星，宽高要有具体值*/
+.s-text>.img .star img{
+	width: 1.6rem;
+	height: 0.28rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*五星图片*/

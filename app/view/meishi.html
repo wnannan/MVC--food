@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>美食</title>
+		<script src="{JS_PATH}rem.js"></script>
+		<link rel="stylesheet" href="{CSS_PATH}meishi.css" />
+		<link rel="stylesheet" href="{LAYUIJS_PATH}font1/iconfont.css" />
+		<script src="{JS_PATH}jquery.min.js"></script>
+		<script src="{JS_PATH}iscroll-probe.js"></script>
+		<script src="{JS_PATH}food.js"></script>
+	</head>
+	<body>
+		<div class="top">
+			<a href="javascript:history.back();"><i class="iconfont icon-buoumaotubiao09"></i>{$cate['title']}</a>
+		</div>
+		<div class="nav">
+			<ul class="dh">
+				<li cid="0">全部</li>
+				{foreach $type as $v}
+				<li cid="{$v['cid']}">{$v['title']}</li>
+				{/foreach}
+			</ul>
+		</div>
+		<ul class="s-a">
+			<li type="id">综合排序</li>
+			<li type="score">好评优先</li>
+			<li type="sale">销量</li>
+			<li type="fee">筛选</li>
+		</ul>
+		<div class="s-b">
+			<div id="wrapper">
+				<div class="scorllup">
+					加载更多...
+				</div>
+				<ul class="s-s">
+
+				</ul>
+				<div class="scorllend">
+					还有许多...
+				</div>
+			</div>
+				
+
+		</div>
+
+		<div class="bgimg">
+			<div class="img"></div>
+		</div>
+		
+		<!--<ul class="tab">
+			<li><a href="#"><i class="iconfont icon-shouye"></i><span>首页</span></a></li>
+			<li><a href="#"><i class="iconfont icon-weibiaoti2fuzhi15"></i><span>发现</span></a></li>
+			<li><a href="#"><i class="iconfont icon-dingdan"></i><span>订单</span></a></li>
+			<li><a href="#"><i class="iconfont icon-wode"></i><span>我的</span></a></li>
+		</ul>-->
+	</body>
+</html>

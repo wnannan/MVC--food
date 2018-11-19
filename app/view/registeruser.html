@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>注册</title>
+		<link rel="stylesheet" href="{CSS_PATH}zhuce.css" />
+		<link rel="stylesheet" href="{LAYUIJS_PATH}font1/iconfont.css" />
+		<script src="{JS_PATH}rem.js"></script>
+		<script src="{JS_PATH}jquery.min.js"></script>
+		<script src="{JS_PATH}jquery.validate.min.js"></script>
+		<script src="{JS_PATH}registeruser.js"></script>
+	</head>
+	<body>
+		<div class="top">
+			<a href="index.html"><i class="iconfont icon-buoumaotubiao09"></i></a>
+			<span>注册</span>
+		</div>
+		<div class="img">
+			<img src="./img/logo.png" alt="" />			
+		</div>
+		<form id="myform">
+			<div class="main">
+				<div class="bgc"></div>
+				<ul class="bg">
+					<li><input id="phone" name="phone" form="myform" type="text" placeholder="请输入您的手机号"/></li>
+					<li><input id="password" name="password" form="myform" type="password" placeholder="请输入您的密码"/></li>
+					<li><input id="password1" name="password1" form="myform" type="password" placeholder="请再次输入密码"/></li>
+					<!--<li class="yzm"><input type="text" placeholder="请输入验证码"/><a href="#">获取验证码</a></li>-->
+					<li><input form="myform" type="submit" value="注册"/></li>
+					<li class="a">
+						<a href="#">忘记密码?</a>
+						<a href="/10.24food/index.php/my/init">已有帐号，请登录</a>
+					</li>
+				</ul>
+			</div>
+		</form>
+		</div>
+	</body>
+</html>

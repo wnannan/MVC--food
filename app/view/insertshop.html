@@ -1,0 +1,116 @@
+<link rel="stylesheet" href="{CSS_PATH}insertcate.css">
+
+{include file='header.html'}
+
+<div class="layui-side layui-bg-black">
+    {include file='slide.html'}
+</div>
+
+<div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div style="padding: 15px;"><!--内容主体区域-->
+
+        <form class="layui-form" action="">
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">所属分类</label>
+                <div class="layui-input-block">
+                    <select name="cid" lay-filter="required">
+                        {foreach $cate as $key=>$v}
+                        <option value="{$v['cid']}"> {$v['title']} </option>
+                        {/foreach}
+                    </select>
+
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">店铺名称</label>
+                <div class="layui-input-block">
+                    <input type="text" lay-filter="required" name="shopname" placeholder="店铺名称" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">店铺公告</label>
+                <div class="layui-input-block">
+                    <input type="text" name="notice" placeholder="店铺公告" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">配送信息</label>
+                <div class="layui-input-block">
+                    <input type="text" lay-filter="required" name="fee" placeholder="配送信息" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">店铺理念</label>
+                <div class="layui-input-block">
+                    <input type="text" name="slogan" placeholder="店铺口号" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">店铺类型</label>
+                <div class="layui-input-block">
+                    <input type="text" name="stype" placeholder="店铺种类" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">联系方式</label>
+                <div class="layui-input-block">
+                    <input type="text" lay-filter="required" name="phone" placeholder="联系方式" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <!--缩略图-->
+            <div class="laui-form-item">
+                <label class="layui-form-label"></label>
+                <ul class="imgBox1">
+
+                </ul>
+            </div>
+
+            <div class="layui-form-item" >
+                <label class="layui-form-label">上传缩略图</label>
+                <button type="button" class="layui-btn" id="test2">
+                    <i class="layui-icon">&#xe67c;</i>上传图片
+                </button>
+            </div>
+            <input type="hidden" name="thumb" >
+
+            <!--店铺实景图片-->
+            <div class="laui-form-item">
+                <label class="layui-form-label"></label>
+                <ul class="imgBox">
+
+                </ul>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">店铺实景图</label>
+                <button type="button" class="layui-btn" id="test1">
+                    多图片上传
+                </button>
+            </div>
+            <input type="hidden" name="views">
+
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="submit">立即提交</button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+</div>
+
+<div class="layui-footer">
+    版权信息
+</div>
+</div>
+<script src="{LAYUIJS_PATH}layui.all.js"></script>
+<script src="{JS_PATH}insertshop.js"></script>
+</body>
+</html>

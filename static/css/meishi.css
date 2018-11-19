@@ -1,0 +1,207 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: none;
+}
+
+.scorllup,.scorllend {
+	margin-top: 0.24rem;
+	color: #ccc;
+	font-size: 0.24rem;
+	text-align: center;
+	display: none;
+}
+.top {
+	display: flex;
+	z-index: 3;
+	height: 1rem;
+	width: 100%;
+	background: linear-gradient(to left,rgb(98,224,251),rgb(115,166,251),rgb(98,224,251));
+	padding: 0 0.24rem;
+}
+.top a i {
+	font-size: 0.26rem;
+	color: #1699d6;
+	margin-right: 0.26rem;
+	vertical-align: 0.04rem;
+}
+.top a {
+	margin-top: 0.32rem;
+	font-size: 0.28rem;
+	color: #fff;
+	text-decoration: none;
+}
+.nav {
+	width: 100%;
+	white-space: nowrap;
+	display: flex;
+	height: 0.88rem;
+	background: rgba(115,166,251,0.4);
+}
+.dh {
+	line-height: 0;
+	width: 100%;
+	padding: 0 0.24rem;
+	overflow: auto;
+}
+.dh::-webkit-scrollbar {
+	height: 0;
+}
+.dh li {
+	display: inline-block;
+	font-size: 0.24rem;
+	flex-shrink: 0;
+	color: rgba(0,100,100,1);
+	line-height: 0.8rem;
+}
+.dh li.hot {
+	color: #fff;
+	border-bottom: 0.01rem solid #fff;
+}
+.s-b {
+	padding: 0.24rem;
+	padding-top: 0;
+	width: 100%;
+	height: 10.27rem;
+	background: rgb(250,249,249);
+	overflow: hidden;
+}
+.s-b .s-s {
+	padding-top: 0.24rem;
+	width: 100%;
+	height: 100%;
+}
+.s-b-a {
+	width: 7.02rem;
+	height: 2.4rem;
+	background: #fff;
+	border-radius: 0.1rem;
+	padding: 0.24rem;
+	margin-bottom: 0.24rem;
+}
+.s-b-a .img {
+	display: inline-block;
+	width: 0.24rem;
+	height: 100%;
+	float: left;
+	margin-left:0;
+}
+.s-b-a .img img {
+	width: 1.36rem;
+	height: 1rem;
+	
+}
+.s-text {
+	margin-left: 1.6rem;
+	width: calc(100% - 1.36rem);
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.s-text h6 {
+	font-size: 0.26rem;
+	text-align: left;
+}
+.s-text h6 a {
+	color: #000;
+	text-decoration: none;
+}
+/*五星图片*/
+/*最外面的div*/
+.s-text>.img {
+	width: 1.6rem;
+	height: 0.28rem;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+/*灰色的星星*/
+.s-text>.img>img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*黄色星星的div，给黄色星星div宽度设置百分比*/
+.s-text>.img .star {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+/*黄色星星，宽高要有具体值*/
+.s-text>.img .star img{
+	width: 1.6rem;
+	height: 0.28rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*五星图片*/
+
+/*五星icon*/
+/*.s-text>div .icon-star_full {
+
+	font-size: 0.24rem;
+	color:rgb(150,150,150);
+}
+.s-text>div .icon-star_full:nth-child(1){
+	color: yellow;
+}*/
+
+.s-text p {
+	font-size: 0.24rem;
+	text-align: left;
+	color: rgba(0,0,0,0.7);
+}
+.s-text p .a {
+	color: rgba(251,203,55,0.7)
+}
+.s-text p .b {
+	float: right;
+}
+.s-a {
+	padding: 0.24rem;
+	font-size: 0.24rem;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+	color: rgba(0,0,0,0.7);
+}
+.s-a>li.hot {
+	color: rgb(98,224,251);
+}
+.bgimg {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0,0.5);
+}
+.bgimg .img {
+	width: 2rem;
+	height: 2rem;
+	background: url('../images/load.png') no-repeat;
+	background-size: auto 100%;
+	animation: load 2s infinite steps(43);
+}
+@keyframes load{
+	from{
+		background-position-x: 0;
+	}
+	to{
+		background-position-x: 100%;
+	}
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>首页</title>
+    <script src="{JS_PATH}/rem.js"></script>
+    <link rel="stylesheet" type="text/css" href="{CSS_PATH}index.css"/>
+    <link rel="stylesheet" href="{LAYUIJS_PATH}font1/iconfont.css" />
+	<link rel="stylesheet" href="{CSS_PATH}modules/swiper-4.4.1.min.css">
+	<script src="{LAYUIJS_PATH}lay/modules/swiper-4.4.1.min.js"></script>
+	<script src="{JS_PATH}jquery.min.js"></script>
+	<script src="{JS_PATH}iscroll-probe.js"></script>
+	<script src="{JS_PATH}index.js"></script>
+</head>
+<body>
+	<div class="top">
+		<div class="t-b">
+			<i class="iconfont icon-location"></i>
+			<p>太原市小店区</p>
+			<a href="#"><i class="iconfont icon-sousuo"></i></a>
+		</div>		
+	</div>
+	
+		<div class="swiper-container banner" style="margin-top: 1.6rem;">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<a href="#"><img src="{IMG_PATH}ban.png"/></a>
+				</div>
+				<div class="swiper-slide">
+					<a href="#"><img src="{IMG_PATH}ban.png"/></a>
+				</div>
+			</div>
+			<div class="swiper-pagination" style="bottom: -8px;"></div>
+		</div>
+
+	<div class="swiper-container cate">
+		<div class="swiper-wrapper">
+			{for $i=0 to $num-1}
+				{assign var=foo value=$i*8+7}
+				{if $foo > count($cate)-1}
+					{$foo = count($cate)-1}
+				{/if}
+			<div class="swiper-slide">
+				<ul class="m-i">
+					{for $j=$i*8 to $foo}
+					<li>
+						<a href="/10.24food/index.php/food?cid={$cate[$j]['cid']}">
+							<img src="{$cate[$j]['thumb']}"/>
+							<p>{$cate[$j]['title']}</p>
+						</a>
+					</li>
+					{/for}
+				</ul>
+			</div>
+			{/for}
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+		
+		<div class="banner1">
+			<a href="#"><img src="{IMG_PATH}ban1.png"/></a>
+		</div>
+		<div class="sjtj">
+			<img src="{IMG_PATH}a1.png"/>
+			<span>商家推荐</span>
+			<img src="{IMG_PATH}a2.png"/>
+		</div>
+		<ul class="s-a">
+			<li name="id">综合排序</li>
+			<li name="score">好评优先</li>
+			<li name="sale">销量</li>
+			<li name="fee">配送费</li>
+		</ul>
+		<div class="s-b">
+			<div class="s-s">
+
+				<div class="s-b-a">
+					<div class="img">
+						<img src="{IMG_PATH}cake.png" alt="" />
+					</div>
+					<div class="s-text">
+						<h6><a href="./dianpu.html">爱度西点</a></h6>
+						<div>
+							<i class="iconfont icon-star_full"></i>
+							<i class="iconfont icon-star_full"></i>
+							<i class="iconfont icon-star_full"></i>
+							<i class="iconfont icon-star_full"></i>
+							<i class="iconfont icon-star_full"></i>
+						</div>
+						<p>28人推荐<span class="a">芭比娃娃蛋糕</span></p>
+						<p>甜点饮品 <span class="b">学府街505m</span></p>
+						<p>满88减5；满128减10；满188减15</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	<div style="height: 1rem"></div>
+
+		<ul class="tab">
+			<li><a href="/10.24food/index.php/"><i class="iconfont icon-shouye"></i><span>首页</span></a></li>
+			<li><a href="#"><i class="iconfont icon-weibiaoti2fuzhi15"></i><span>发现</span></a></li>
+			<li><a href="/10.24food/index.php/order"><i class="iconfont icon-dingdan"></i><span>订单</span></a></li>
+			<li><a href="/10.24food/index.php/mine"><i class="iconfont icon-wode"></i><span>我的</span></a></li>
+		</ul>
+</body>
+</html>

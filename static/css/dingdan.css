@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: none;
+	text-align: center;
+}
+.top {
+	/*position: fixed;
+	top: 0;
+	left: 0;*/
+	width: 7.5rem;
+	height: 1.2rem;
+	background: linear-gradient(to left,rgb(98,224,251),rgb(115,166,251),rgb(98,224,251));
+}
+.top p {
+	font-size: 0.3rem;
+	text-align: center;
+	color: #fff;
+	padding-top: 0.64rem;
+}
+.scroll {
+	width: 100%;
+	height: 11.34rem;
+	/*height: calc(100% - 1.2rem - 0.98rem);*/
+	overflow: hidden;
+}
+.scroll .order {
+	width: 100%;
+	height:auto;
+}
+.s-b-a {
+	box-shadow: 0 0 0.5rem #CCCCCC;
+	width: 7.02rem;
+	height: 1.77rem;
+	background: #fff;
+	border-radius: 0.1rem;
+	padding: 0.24rem;
+	margin: 0.24rem auto 0;
+}
+.s-b-a .img {
+	display: inline-block;
+	width: 0.24rem;
+	height: 100%;
+	float: left;
+	margin-left:0;
+}
+.s-b-a .img img {
+	width: 1.36rem;
+	height: 100%;
+}
+.s-text {
+	float: right;
+	width: 5rem;
+	height: 100%;
+}
+.s-text span {
+	color: rgba(0,0,0,0.4);
+	font-size: 0.2rem;
+	float: right;
+	margin-top: -0.3rem;
+}
+.s-text p {
+	font-size: 0.3rem;
+	float: right;
+	margin-right: 0.1rem;
+}
+.s-text h6 {
+	font-size: 0.26rem;
+	text-align: left;
+	margin-bottom: 0.12rem;
+}
+.s-text h6 a {
+	color: #000;
+	text-decoration: none;
+}
+.s-text>div {
+	height: 0.24rem;
+	width: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+.s-text>div .icon-star_full {
+	
+	font-size: 0.24rem;
+	color:rgb(150,150,150);
+}
+.s-text>div .icon-star_full:nth-child(1){
+	color: yellow;
+}
+.s-text .a {
+	width: 2.9rem;
+	margin-top: 0.36rem;
+}
+.s-text .a a {
+	display: inline-block;
+	width: 1.38rem;
+	height: 0.34rem;
+	line-height: 0.34rem;
+	border-radius: 0.15rem;
+	background: linear-gradient(rgb(98,224,251),rgb(115,166,251));
+	color: #fff;
+	font-size: 0.18rem;
+	text-decoration: none;
+	margin-right: 0.11rem;
+}
+
+
+
+.tab a {
+	text-decoration: none;
+	color: rgba(0,0,0,0.7);
+}
+.tab {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 0 0.24rem;
+	width: 100%;
+	height: 0.98rem;
+	background: #fff;
+}
+.tab li {
+	width: 0.6rem;
+	height: 0.98rem;
+	position: relative;
+}
+.tab a span {
+	font-size: 0.1rem;
+	position: absolute;
+	bottom: 0.14rem;
+	left: 0.12rem;
+	
+}
+.tab a i {
+	margin-top: 0.12rem;
+	display: block;
+	font-size: 0.47rem;
+	color: #1497d9;
+	line-height: 0.47rem;
+}

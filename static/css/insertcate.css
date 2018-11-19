@@ -1,0 +1,49 @@
+
+.imgBox li,
+.imgBox1 li{
+    float: left;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.imgBox li img,
+.imgBox1 li img{
+    width: 100%;
+    /*height: 100%;*/
+}
+.imgBox li .mask,
+.imgBox1 li .mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+.imgBox li .button,
+.imgBox1 li .button{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    width: 60%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #009688;
+    opacity: 0;
+    transition: all .5s;
+}
+.imgBox li:hover .button,
+.imgBox1 li:hover .button{
+    opacity: 1;
+}
+.layui-icon:before {
+    font-size: 20px;
+}
+.imgBox li:hover .mask,
+.imgBox1 li:hover .mask{
+    opacity: 1;
+}
